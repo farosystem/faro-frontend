@@ -1,0 +1,6 @@
+enum CODIGO_MENSAJE {
+  ACEPTADO = '1',
+  ACEPTACION_PARCIAL = '2',
+  RECHAZADO = '3'
+}
+export { CODIGO_MENSAJE };
