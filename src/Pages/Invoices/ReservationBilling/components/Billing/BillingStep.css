@@ -1,0 +1,31 @@
+.invoice-embedded .search-row {
+  position: relative;
+}
+.invoice-embedded .search-suggest {
+  position: absolute;
+  z-index: 10;
+  background: #fff;
+  width: 100%;
+  top: 38px;
+  border: 1px solid #eee;
+}
+.invoice-embedded .suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+.invoice-embedded .suggestion:hover {
+  background: #f5f5f5;
+}
+.invoice-embedded .items-table table {
+  background: #fff;
+}
+.invoice-embedded .sticky-footer {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+.invoice-embedded .footer-actions .btn {
+  min-width: 120px;
+}

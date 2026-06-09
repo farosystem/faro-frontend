@@ -1,0 +1,103 @@
+.actividadSelect,
+.actividadSelect option {
+  white-space: normal !important;
+  word-break: break-word !important;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  gap: 0.25rem;
+  width: 100%;
+  max-height: 250px;
+  padding-right: 0.25rem;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+.code {
+  color: #111827;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.75rem;
+  background: #f0f0f0;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.selectedChip {
+  background: #d1e7dd;
+  border: 1px solid #0f5132;
+}
+
+.economicActivitiesActionsComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.description {
+  display: block;
+  white-space: normal;
+  word-break: break-word;
+  margin-top: 0.125rem;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1rem;
+}
+
+.newActivityContainer {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 0rem 1rem;
+}
+
+.newActivityForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newActivityFormDescription {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.newActivityFormSave {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1rem;
+}

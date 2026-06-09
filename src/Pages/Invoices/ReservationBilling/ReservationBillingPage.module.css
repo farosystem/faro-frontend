@@ -1,0 +1,584 @@
+.page {
+  padding: 0px 12px; /* compact */
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.headerActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.totalChip {
+  display: inline-block;
+  background: #f7f9fb;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.leftCol {
+  padding-right: 12px;
+}
+.rightCol {
+  padding-left: 12px;
+}
+.infoCard {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #eceff1;
+}
+
+/* grouped list adjustments */
+.infoListRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+.infoListRow input[type='checkbox'] {
+  transform: scale(1.1);
+}
+.infoListRow .ms-3 {
+  margin-left: 12px !important;
+}
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px; /* tighter */
+}
+
+.selectAllBtn {
+  color: #0bb197;
+  font-size: 0.9rem;
+  padding: 0;
+  border: none;
+}
+
+.selectAllBtn:hover {
+  text-decoration: underline;
+}
+.roomItem {
+  padding: 12px 0;
+}
+.roomItem + .roomItem {
+  margin-top: 10px;
+}
+
+.roomLineInfo {
+  color: #6f7781;
+  font-size: 0.85rem;
+}
+
+.roomTitle {
+  font-size: 0.98rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 280px;
+}
+
+.roomInfo {
+  display: flex;
+  gap: 8px; /* tighter */
+  align-items: center;
+}
+
+.roomInfo .item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #6f7781;
+  font-size: 0.85rem;
+}
+
+.guestPill {
+  display: inline-block;
+  background: #f0f4f3;
+  color: #0b8f76;
+  padding: 3px 7px;
+  border-radius: 14px;
+  font-size: 0.78rem;
+}
+
+.roomBadge {
+  background: #eef6f4;
+  color: #0bb197;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  align-self: flex-start;
+}
+
+.roomMeta {
+  min-width: 140px;
+  text-align: right;
+}
+
+.roomMeta .badge {
+  font-size: 0.75rem;
+  padding: 6px 8px;
+}
+
+.roomCard {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eef0f1;
+  padding: 6px 10px; /* even more compact */
+  margin-bottom: 6px; /* less vertical gap */
+}
+
+/* compact horizontal item card */
+.itemCard {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eef0f1;
+  padding: 10px 12px;
+  display: block;
+  font-size: 0.95rem; /* homogenized */
+}
+.titleInput {
+  font-weight: 600;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+}
+.titleInput:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.titleText {
+  font-weight: 600; /* semibold */
+  font-size: 1rem; /* uniform */
+  padding: 2px 0;
+  color: #2b2b2b;
+}
+
+/* detail label/value styling homogenized */
+.detailLabel {
+  color: #6f7781;
+  font-size: 0.88rem;
+  font-weight: 600;
+  min-width: 84px;
+}
+.detailValue {
+  color: #495057;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* price emphasis */
+.roomTotal {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.smallMuted {
+  color: #6f7781;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* detailed fields for services, tours, packages */
+.detailRow {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.detailLabel {
+  color: #6f7781;
+  font-size: 0.82rem;
+  min-width: 70px;
+  font-weight: 600;
+}
+.detailValue {
+  color: #495057;
+  font-size: 0.9rem;
+  white-space: normal;
+  max-width: 68%;
+}
+
+.description {
+  display: block;
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  max-height: 3.9em; /* ~3 lines */
+  overflow: hidden;
+  position: relative;
+}
+.description::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+}
+
+.includeList {
+  color: #495057;
+  font-size: 0.88rem;
+}
+
+.priceLine {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #495057;
+  font-size: 0.88rem;
+}
+
+.smallMuted {
+  color: #6f7781;
+  font-size: 0.82rem;
+}
+
+/* quantity control */
+.qtyControl {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.qtyControl button {
+  padding: 4px 8px;
+}
+
+.roomItem {
+  padding: 12px 12px;
+}
+
+.roomNumber {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f3f7f6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0bb197;
+  margin-right: 8px;
+  font-size: 0.88rem;
+}
+
+.roomRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* align items to the right */
+  justify-content: space-between; /* top checkbox, bottom price */
+  gap: 6px;
+  min-width: 110px;
+  min-height: 70px; /* give vertical space so price sits at bottom */
+  margin-top: 0; /* ensure no extra top margin */
+  align-self: stretch; /* take available vertical space so price can sit at bottom */
+}
+
+.checkboxWrap {
+  display: inline-flex;
+  justify-content: flex-end; /* place checkbox at the right */
+  align-items: center;
+  margin-bottom: 6px;
+  position: relative; /* needed for custom visual */
+  width: 100%; /* take full width so absolute right aligns to column edge */
+  padding-right: 4px;
+  cursor: pointer; /* make entire wrapper clickable */
+}
+
+/* Replace native checkbox visuals with a consistent square */
+.checkboxWrap input[type='checkbox'] {
+  position: absolute !important;
+  right: 12px !important; /* align with card inner padding */
+  top: 8px !important; /* pin to top */
+  transform: none !important;
+  width: 20px !important; /* match visual */
+  height: 20px !important;
+  padding: 0 !important;
+  line-height: 20px !important;
+  font-size: 0 !important; /* prevent inherited sizing */
+  display: block !important;
+  box-sizing: border-box !important;
+  opacity: 0 !important; /* hide native control but keep it accessible */
+  margin: 0 !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  -webkit-appearance: none !important;
+}
+
+.checkboxVisual {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cfd8dc;
+  background: #fff;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  position: absolute;
+  right: 12px; /* align with card inner padding */
+  top: 8px; /* pin to top */
+  transform: none;
+  cursor: pointer;
+}
+
+.checkboxWrap:hover .checkboxVisual {
+  border-color: #b0bec5;
+}
+
+/* focus ring when keyboard-focused */
+.checkboxWrap input[type='checkbox']:focus + .checkboxVisual {
+  box-shadow: 0 0 0 3px rgba(11, 177, 151, 0.12);
+}
+
+/* checked state */
+.checkboxWrap input[type='checkbox']:checked + .checkboxVisual {
+  background: #0bb197;
+  border-color: #0bb197;
+}
+
+.checkboxWrap input[type='checkbox']:checked + .checkboxVisual::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+/* Square styled checkbox for consistent look */
+.checkboxWrap input[type='checkbox'],
+.checkboxWrap input[type='checkbox'].form-check-input {
+  /* force a square, reset any bootstrap/default styles */
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  width: 20px !important;
+  height: 20px !important;
+  aspect-ratio: 1/1;
+  border: 2px solid #cfd8dc !important;
+  border-radius: 0 !important; /* fully square */
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  background: #fff !important;
+  cursor: pointer;
+  line-height: 0;
+  transform: none !important;
+}
+.checkboxWrap input[type='checkbox']:hover,
+.checkboxWrap input[type='checkbox'].form-check-input:hover {
+  border-color: #b0bec5 !important;
+}
+.checkboxWrap input[type='checkbox']:focus,
+.checkboxWrap input[type='checkbox'].form-check-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(11, 177, 151, 0.12);
+}
+.checkboxWrap input[type='checkbox']:checked,
+.checkboxWrap input[type='checkbox'].form-check-input:checked {
+  background: #0bb197 !important;
+  border-color: #0bb197 !important;
+}
+.checkboxWrap input[type='checkbox']::after,
+.checkboxWrap input[type='checkbox'].form-check-input::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -60%) rotate(45deg);
+  display: none;
+}
+.checkboxWrap input[type='checkbox']:checked::after,
+.checkboxWrap input[type='checkbox'].form-check-input:checked::after {
+  display: block;
+}
+/* Ensure other checkbox scalings don't interfere */
+.infoListRow input[type='checkbox'] {
+  transform: none;
+}
+/* Ensure other checkbox scalings don't interfere */
+.infoListRow input[type='checkbox'] {
+  transform: none;
+}
+
+/* right-align header/date and price inside the roomRight column */
+.roomRight .text-end {
+  text-align: right;
+  align-self: flex-end;
+}
+.roomRight .roomTotal {
+  text-align: right;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.roomTotal {
+  font-size: 1.05rem;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .roomRight {
+    align-items: flex-end;
+    min-width: 0;
+  }
+  .roomInfo {
+    gap: 8px;
+  }
+}
+
+/* block to group price label + value and pin to bottom-right */
+.priceBlock {
+  margin-top: auto; /* push to bottom */
+  text-align: right;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.priceBlock .small {
+  color: #6f7781;
+}
+.roomNumber {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f3f7f6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0bb197;
+  margin-right: 12px;
+  font-size: 0.95rem;
+}
+
+.roomMeta {
+  min-width: 140px;
+  text-align: right;
+}
+
+.roomMeta .badge {
+  font-size: 0.75rem;
+  padding: 6px 8px;
+}
+
+/* Badge color map */
+.badge-status-pending {
+  background: #6c757d;
+  color: #fff;
+}
+.badge-status-scheduled {
+  background: #4f8ef7;
+  color: #fff;
+}
+.badge-status-inuse {
+  background: #28a745;
+  color: #fff;
+}
+.badge-status-checkout {
+  background: #ffb020;
+  color: #fff;
+}
+.badge-status-default {
+  background: #9aa0a6;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .roomMeta {
+    min-width: 0;
+    text-align: left;
+    margin-top: 8px;
+  }
+}
+.tableCard {
+  border-radius: 8px;
+  border: 1px solid #eceff1;
+}
+.tableCard table thead th {
+  background: #f6f6f7;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+  font-weight: 700;
+  padding: 18px 22px;
+  font-size: 0.98rem;
+}
+.tableCard table tbody td {
+  padding: 14px 20px;
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+.tableRow input[type='number'],
+.tableRow select {
+  min-height: 44px;
+  font-size: 0.99rem;
+}
+.totals {
+  text-align: right;
+}
+.btnPrimary {
+  background-color: #0bb197;
+  border-color: #0bb197;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.btnSecondary {
+  background-color: #6c6f76;
+  border-color: #6c6f76;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.cardBodyCompact {
+  padding: 14px;
+}
+.breadcrumbs {
+  margin-bottom: 18px;
+}
+.currency {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.clientBox {
+  margin-top: 16px;
+}
+.sidebar {
+  position: sticky;
+  top: 96px; /* accommodate header/breadcrumb */
+}
+.sidebar .infoCard {
+  margin-bottom: 12px;
+}
+.tableCard {
+  overflow: auto;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    margin-top: 16px;
+  }
+  .leftCol,
+  .rightCol {
+    padding: 0 !important;
+  }
+}
