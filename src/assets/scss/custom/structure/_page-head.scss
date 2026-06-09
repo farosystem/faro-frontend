@@ -1,0 +1,19 @@
+//
+// Page-title
+//
+
+.page-title-box {
+  padding-bottom: $grid-gutter-width;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

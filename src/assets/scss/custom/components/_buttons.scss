@@ -1,0 +1,114 @@
+//
+// _buttons.scss
+//
+
+button,
+a {
+  outline: none !important;
+}
+
+.btn-light {
+  border: 1px solid darken($light, 2%);
+}
+
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-dark,
+.btn-secondary {
+  color: $gray-200 !important;
+}
+
+.btn-outline-light {
+  color: $gray-900;
+}
+
+//
+// Soft Buttons
+//
+
+@mixin button-variant-soft($bg) {
+  color: $bg;
+  background-color: rgba($bg, 0.1);
+  border-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $bg;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-soft-#{$color} {
+    @include button-variant-soft($value);
+  }
+}
+
+.btn-group-vertical {
+  label {
+    margin-bottom: 0;
+  }
+}
+
+.btn-table {
+  border: 1px solid $white;
+  border-radius: 0.5em;
+  height: 60px;
+  width: 100px;
+  padding: 6px;
+  color: $white;
+  background-color: $primary;
+  position: absolute;
+  z-index: 1;
+  &.chair {
+    border-radius: 50% !important;
+    height: 40px !important;
+    width: 40px !important;
+  }
+  &.selected {
+    box-shadow:
+      0 0 10px 0 rgba(0, 0, 0, 0) inset,
+      0 0 10px 4px $yellow !important;
+    border: 5px solid $yellow-400;
+    transition:
+      box-shadow 0.2s ease-out,
+      background-color 0.2s ease-out;
+    padding: 0;
+  }
+  &.has-order {
+    background-color: $blue-800 !important;
+    box-shadow: 0 0 15px $primary inset;
+  }
+  &.reserved {
+    background-color: $orange !important;
+  }
+}
+
+.btn-info-table {
+  border: 1px solid;
+  border-radius: 0.5em;
+  background-color: $primary;
+  margin: 10px;
+  height: 35px;
+  color: $white;
+  &.has-order {
+    background-color: $blue-800 !important;
+    box-shadow: 0 0 15px $primary inset;
+  }
+  &.reserved {
+    background-color: $orange !important;
+  }
+}
+
+.btn-add-remove {
+  height: 25px;
+  width: 30px;
+  min-height: 25px;
+  min-width: 30px;
+  padding: 0;
+  margin: 0;
+}
