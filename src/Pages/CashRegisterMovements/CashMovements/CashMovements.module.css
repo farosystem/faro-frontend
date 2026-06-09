@@ -1,0 +1,124 @@
+.filterRow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-between; /* distribute filters and actions */
+  width: 100%;
+  gap: 2rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  margin-bottom: 0.75rem; /* 12px */
+}
+
+/* fallback: give each direct child a right margin in case gap isn't respected */
+.filterRow > * {
+  margin-right: 2rem !important;
+  /* outline: 2px dashed red; debug */
+}
+.filterRow > *:last-child {
+  margin-right: 0 !important;
+}
+
+/* ensure wrappers carrying controls also provide spacing */
+.filterRow > .flex-shrink-0 {
+  margin-right: 2rem !important;
+}
+.filterRow > .flex-shrink-0:last-child {
+  margin-right: 0 !important;
+}
+
+/* target input elements and react-select controls directly */
+.filterRow input {
+  margin-right: 2rem !important;
+}
+
+.filterRow :global(.react-select__control) {
+  margin-right: 2rem !important;
+}
+
+.dateInput,
+.filterInput {
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 1.125rem; /* 18px */
+  padding: 8px 16px;
+  width: 10rem;
+  min-width: 10rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+}
+
+.smallSelect {
+  font-size: 1.125rem; /* 18px */
+  min-width: 10rem;
+}
+
+.compactButton {
+  padding: 8px 16px;
+  font-size: 1.125rem; /* 18px */
+  height: 2.5rem;
+  min-width: 5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.control {
+  min-width: 10rem;
+}
+
+.cajaRow {
+  cursor: pointer;
+}
+
+.cajaRow:hover {
+  background-color: #f1f5f9;
+}
+
+.cajaRowSelected {
+  border: 2px solid #3b82f6; /* blue "/primary" */
+}
+
+/* duplicated by both components */
+.cajaRow {
+  cursor: pointer;
+}
+
+.cajaRow:hover {
+  background-color: #f1f5f9;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem !important; /* match filter spacing */
+}
+
+/* separate container for filter buttons so they live outside the main row */
+.filterActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.filterContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

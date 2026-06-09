@@ -1,0 +1,28 @@
+.container {
+  margin-top: 1.5rem;
+}
+
+.formSection {
+  margin-bottom: 1.5rem;
+}
+
+.distributionTable td {
+  padding: 0.25rem 0.5rem;
+}
+
+.summaryRow {
+  font-weight: 600;
+}
+
+.inputCell input {
+  width: 100%;
+  padding: 0.25rem 0.4rem;
+}
+
+.cardBody {
+  padding: 2rem;
+}
+
+.selectWrapper {
+  max-width: 400px;
+}

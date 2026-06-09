@@ -1,0 +1,11 @@
+/* Styles for cash management filter row and buttons */
+.filterRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+}

@@ -1,0 +1,28 @@
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.filterRow {
+  margin-bottom: 1rem;
+}
+
+.stats {
+  margin-bottom: 0.75rem;
+  color: #5a5a5a;
+}
+
+.actionArea {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.tableContainer {
+  margin-top: 1rem;
+}
+
+.bold {
+  font-weight: 700;
+}

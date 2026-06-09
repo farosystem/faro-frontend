@@ -1,0 +1,67 @@
+.formContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formLabel {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.twoCol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.twoCol > .formGroup {
+  flex: 1 1 45%;
+}
+
+.fullWidth {
+  flex: 1 1 100%;
+}
+
+.submitRow {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.helperText {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/* full‑width select/inputs inside two‑column layout */
+.selectControl {
+  width: 100%;
+}
+
+/* plain text input style when showing module */
+.inputPlain {
+  padding: 0.375rem 0;
+  background-color: transparent;
+  border: none;
+  color: #495057;
+}
+
+/* container for submit button or actions */
+.buttonContainer {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* small subtitle under title if needed */
+.subtitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
