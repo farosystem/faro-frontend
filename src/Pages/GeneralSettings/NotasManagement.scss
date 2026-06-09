@@ -1,0 +1,307 @@
+.notas-management {
+  .notas-header {
+    display: flex;
+    h5 {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .nota-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    &-actions {
+      width: min-content;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: flex;
+      gap: 8px;
+
+      .btn {
+        border-radius: 6px;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        &.btn-sm {
+          padding: 0.25rem 0.75rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .nota-content {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 4.5em;
+      line-height: 1.5;
+    }
+  }
+
+  .filters-section {
+    .ant-select {
+      height: 40px;
+
+      .ant-select-selector {
+        border-radius: 6px;
+        border: 1px solid #ced4da;
+        height: 40px !important;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          border-color: #556ee6;
+        }
+      }
+
+      &.ant-select-focused {
+        .ant-select-selector {
+          border-color: #556ee6;
+          box-shadow: 0 0 0 0.2rem rgba(85, 110, 230, 0.25);
+        }
+      }
+    }
+
+    .ant-picker {
+      border-radius: 6px;
+      border: 1px solid #ced4da;
+      width: 100%;
+      height: 40px;
+
+      &:hover {
+        border-color: #556ee6;
+      }
+
+      &.ant-picker-focused {
+        border-color: #556ee6;
+        box-shadow: 0 0 0 0.2rem rgba(85, 110, 230, 0.25);
+      }
+    }
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6c757d;
+
+    .empty-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+
+    .empty-text {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .empty-subtext {
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  }
+
+  .loading-state {
+    text-align: center;
+    padding: 2rem;
+
+    .spinner-border {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .nota-form {
+    .required-field {
+      &::after {
+        content: ' *';
+        color: #dc3545;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: #495057;
+      }
+    }
+
+    .ant-select,
+    .ant-picker {
+      min-height: 38px;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+    }
+  }
+
+  .stats-card {
+    background: linear-gradient(135deg, #556ee6 0%, #3b5aa0 100%);
+    color: white;
+
+    .stats-icon {
+      font-size: 2.5rem;
+      opacity: 0.8;
+    }
+
+    .stats-number {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+
+    .stats-label {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.35em 0.65em;
+    border-radius: 6px;
+
+    &.badge-primary {
+      background-color: #556ee6;
+    }
+
+    &.badge-success {
+      background-color: #34c38f;
+    }
+
+    &.badge-warning {
+      background-color: #f1b44c;
+    }
+
+    &.badge-danger {
+      background-color: #f46a6a;
+    }
+
+    &.badge-secondary {
+      background-color: #74788d;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .filters-section {
+      .row > .col-md-3,
+      .row > .col-md-2 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .nota-card {
+      margin-bottom: 1rem;
+    }
+  }
+
+  // Responsive grid adjustments
+  @media (max-width: 1200px) {
+    .nota-card {
+      .nota-content {
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        max-height: 3em;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .filters-section {
+      .form-group {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  // Custom scrollbar for modal
+  .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+    }
+  }
+}
+
+// Ant Design customizations for consistency
+.ant-notification {
+  .ant-notification-notice {
+    border-radius: 8px;
+
+    .ant-notification-notice-content {
+      .ant-notification-notice-message {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Override Bootstrap modal for better mobile experience
+.modal {
+  .modal-dialog {
+    @media (max-width: 576px) {
+      margin: 1rem;
+      max-width: calc(100% - 2rem);
+    }
+  }
+
+  .modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .modal-header {
+    border-bottom: 1px solid #e9ecef;
+    padding: 1.5rem;
+
+    .modal-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .btn-close {
+      font-size: 1.5rem;
+    }
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+  }
+
+  .modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+  }
+}
