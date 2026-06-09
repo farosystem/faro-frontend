@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "types": [
+      "vite/client",
+      "vitest/globals",
+      "@testing-library/jest-dom"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/gql": [
+        "./src/gql/*"
+      ],
+      "@/services": [
+        "./src/services/*"
+      ],
+      "@/helpers": [
+        "./src/helpers/*"
+      ],
+      "@/components": [
+        "./src/components/*"
+      ],
+    },
+  },
+  "include": [
+    "src",
+    "declarations.d.ts",
+  ],
+}
